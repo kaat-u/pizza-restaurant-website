@@ -1,0 +1,602 @@
+:root {
+/* COLORES */
+    --color1: #b40818;
+    --color2: #ffb200;
+    --color3: #240205;
+    --color4: #282828;
+    --color5: #545a5b;
+    --color6: #a6a5a5;
+    --color7: #e9dbdd;
+    --color8: #FFFFFF;
+    --color9: #800612;
+    --color10: #4e0505;
+    --color11: #000000;
+    --color12: #ffe4a6;
+    --color13: #ffb200;
+
+/* TIPOGRAFÍA */
+    --fuente1: "Manrope", sans-serif;
+    --fuente2: "Alan Sans", sans-serif;
+
+/* TAMAÑO DE FUENTES */
+    --fs1: 16px;
+    --fs2: 20px;
+    --fs3: 24px;
+    --fs4: 36px;
+    --fs5: 48px;
+    --fs6: 60px;
+
+/* INTERLINEADO */
+    --lh1: 1.8em;
+    --lh2: 1.5;
+    --lh3: 1.8;
+    --lh4: 2;
+}
+
+
+
+/* SELECTOR UNIVERSAL */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 16px / 1.5lh */
+body {
+    font-family: var(--fuente2);
+    line-height: var(--lh1);
+    font-size: var(--fs1);
+}
+
+h1 {
+    font-size: var(--fs1); /* 16px */
+}
+
+h2 {
+    font-size: var(--fs2); /* 20px */
+}
+
+h3 {
+    font-size: var(--fs3); /* 24px */
+}
+
+h4 {
+    font-size: var(--fs4); /* 36px */
+}
+
+h5 {
+    font-size: var(--fs5); /* 50px */
+}
+
+h6 {
+    font-size: var(--fs6); /* 80px */
+}
+
+
+
+
+
+/* SELECTORES DE ESTILOS DE TIPO CLASS */
+.container {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;    
+}
+
+.container-center {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;    
+}
+
+
+
+
+
+/* FLEXBOX */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col { 
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.col-clientes {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;    
+}
+
+.col-calidad {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* PADDING */
+.padding-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padding-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.padding-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.padding-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.padding-250 {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.padding-300 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.padding-400 {
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+
+.padding-450 {
+    padding-top: 450px;
+    padding-bottom: 450px;
+}
+
+.padding-500 {
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+.padding-600 {
+    padding-top: 600px;
+    padding-bottom: 600px;
+}
+
+
+
+
+
+/* COLUMNAS */
+.col-20 {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.col-25 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-33 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.col-50 { 
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-60 { 
+    flex-basis: 60%;
+    max-width: 60%;
+}
+
+.col-66 { 
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+}
+
+.col-70 {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+.col-100 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+/* SELECTORES POR SECCIÓN */
+
+
+
+
+
+/* 1. HEADER / CABECERA */
+.header-top {
+    background-color: var(--color4);
+    color: var(--color8);
+    padding: 5px 5px;    
+}
+
+.header {
+    background-color: var(--color10);
+    color: var(--color8);
+    padding: 5px 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+
+
+/* BARRA DE NAVEGACIÓN */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu-link {
+    display: block;
+    padding: 5px 10px;
+    color: var(--color8);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-menu-link:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+
+
+
+
+/* 2. BANNER PRINCIPAL */
+.banner {
+    background-color: var(--color9);
+    color: var(--color8);
+}
+
+.banner-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color10);
+    color: var(--color2);
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: var(--fs3);
+}
+
+.banner-button:hover {
+    background-color: var(--color3);
+}
+
+.container-banner {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+
+
+
+
+
+/* 3. SECCIÓN DE PRESENTACIÓN */
+.about {
+    background-color: var(--color8);
+    color: var(--color11);
+}
+
+.about-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 0px 10px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+
+.about-img {
+    width: 500px;
+}
+
+
+
+
+
+/* 4. SECCIÓN DE SERVICIOS */
+.menu {
+    background-color: var(--color9);
+    color: var(--color8);
+}
+
+.menu-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color2);
+  color: var(--color11);
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: var(--fs2);
+}
+
+.menu-button:hover {
+    background-color: var(--color12);
+}
+
+.menu-img {
+    width: 100%; 
+    object-fit: cover; 
+}
+
+
+
+
+
+/* 5. TESTIMONIOS DE CLIENTES */
+.feedback {
+    background-color: var(--color9);
+    color: var(--color8);
+}
+
+
+
+
+
+/* 6. NUESTRO EQUIPO */
+.staff {
+    background-color: var(--color8);
+    color: var(--color11);
+}
+
+.staff-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    font-size: var(--fs2)
+}
+
+
+
+
+
+/* 7. FOOTER / PIE DE PÁGINA */
+.footer {
+    background-color: var(--color4);
+    color: var(--color8);
+}
+
+
+
+
+
+/* 8. CALIDAD DE PRODUCTOS */
+.calidad {
+    background-color: var(--color8);
+    color: var(--color11);
+}
+
+
+
+/* CARRUSEL */
+.imagen-carrusel {
+    max-width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.texto-oscuro {
+    color: var(--color11);
+}
+
+.img-fluid-staff {
+    width: 100%;
+    height: auto;    
+    border-radius: 30px;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.redes-sociales {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    z-index: 100;
+}
+
+.staff-card-img {
+    position: relative;
+}
+
+.scroll-up {
+    /* Formato y tamaño */
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid var(--color8);
+    background-color: var(--color1);
+    color: var(--color8);
+
+    /* Posicion del icono */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 15px 20px 0 rgba(32, 54, 70, 0.4);
+    border-radius: 50%;
+}
+
+.scroll-up:hover {
+    transform: translateY(-10px);
+}
+
+.texto-center {
+    text-align: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Selectores para Diseño Web Responsive */
+
+/* Breakpoint para pantallas grandes (large), de hasta 1200px */
+@media screen and (max-width:1200px) {
+    .banner-img {
+        height: 300px;
+        padding-top: 40px;
+    }
+
+    .container-banner {
+        padding-left: 50px;
+    }
+
+}
+
+/* Breakpoint para pantallas medianas (medium), de hasta 992px */
+@media screen and (max-width:992px) {
+    .banner-img {
+        height: 270px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .staff-position {
+        font-size: 18px;
+    }
+
+    .col-25 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .container {
+        max-width: 70%;
+    }
+
+    .padding-20 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+
+
+/* Breakpoint para pantallas pequeñas (small o tabletas), de hasta 768px */
+@media screen and (max-width:768px) {
+
+    .banner-img {
+        height: 220px;
+    }
+
+    .col-33 {
+        flex-basis: 50%;
+        max-width: 50%;   
+    }
+}
+
+
+
+/* Breakpoint para pantallas extra pequeñas (xsmall o celulares), de hasta 576px */
+@media screen and (max-width:576px) {
+
+    .col-33 {
+        flex-basis: 100%;
+        max-width: 100%;   
+    }
+
+    .col-25 {
+        flex-basis: 100%;
+        max-width: 100%;   
+    }
+
+    .banner-img {
+        height: 0px;
+    }
+}

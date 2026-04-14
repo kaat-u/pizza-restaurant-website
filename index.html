@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANTE FINAL</title>
+
+
+
+    <!-- Enlazar HTML con la librería de fuentes de Google Fonts (Manrope) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Enlazar HTML con la librería de fuentes de Google Fonts (Alan Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Enlazar con la hoja de estilos principal de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Enlazar HTML con la hoja de estilos externa CSS personal -->
+    <link rel = "stylesheet" href = "assets/css/styles.css">
+
+    <!-- Enlazar el HTML con la librería de iconos de Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+<!-- 1. HEADER / CABECERA -->
+<header id = "top-bar" class = "header-top">
+    <div class = "container">
+
+        <!-- FLEXBOX -->
+            <div class = "d-flex justify-content-between">
+                <!-- CONTACTO -->
+                <div>
+                    <a class = "me-3 text-white text-decoration-none" href = "tel:+51987345789"><i class="fa-solid fa-phone"></i> +51 999 888 777</a>
+                    <a class = "me-3 text-white text-decoration-none" href = "mailto:info@resto.com"><i class="fa-regular fa-envelope"></i> info@resto.com</a>
+                    <a class = "me-3 text-white text-decoration-none" href = "#"><i class = "fa-solid fa-location-dot"></i>Road Brooklyn Street</a>
+                </div>
+                <!-- REDES SOCIALES -->
+                <div>
+                    <a class = "me-2 text-white text-decoration-none" href = "https://facebook.com/" target = "_blank" title = "Síguenos en Facebook"><i class = "fa-brands fa-facebook"></i></a>
+                    <a class = "me-2 text-white text-decoration-none" href = "https://instagram.com/" target = "_blank" title = "Síguenos en Instagram"><i class= "fa-brands fa-instagram"></i></a>
+                    <a class = "me-2 text-white text-decoration-none" href = "https://tiktok.com/" target = "_blank" title = "Síguenos en TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+    </div>
+</header>
+
+
+<!-- 1.1. BARRA DE NAVEGACIÓN -->
+    <header id = "cabecera" class = "header">
+            <div class = "container"> 
+                <div class = "nav-bar"> <!-- BARRA DE NAVEGACIÓN -->
+                    <div class = "nav-logo"> <!-- LOGO -->
+                        <img src = "assets/img/logo.png" class="img-fluid" alt="">
+                    </div>  
+            
+                    <div class="nav-menu"> <!-- BARRA DE MENÚ -->
+                        <a class="nav-menu-link" href="#">Inicio</a>
+                        <a class="nav-menu-link" href="#">Nosotros</a>
+                        <a class="nav-menu-link" href="#">Menú</a>
+                        <a class="nav-menu-link" href="#">Tienda</a>
+                        <a class="nav-menu-link" href="#">Blog</a>
+                        <a class="nav-menu-link" href="#">Contacto</a>                    
+                    </div>
+                </div>           
+            </div>
+    </header>
+
+        <!-- Carrusel de imágenes -->
+        <section class = "carrusel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="assets/img/carrusel1.webp" class="d-block w-100 imagen-carrusel" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>1. Comparte en familia y amigos</h5>
+                            <p>Ven con tus amistades para disfrutar de las mejores pizzas de la ciudad.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/carrusel2.webp" class="d-block w-100 imagen-carrusel" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>2. Reserva desde nuestra página web</h5>
+                            <p>Puedes reservar a través de nuestra página web o contactarnos por teléfono y correo.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/carrusel3.webp" class="d-block w-100 imagen-carrusel" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>3. Calidad en cada una de nuestras pizzas</h5>
+                            <p>Todas nuestras pizzas son preparadas con ingredientes frescos.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/carrusel4.webp" class="d-block w-100 imagen-carrusel" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>4. Disfruta de nuestras pizzas recién horneadas</h5>
+                            <p>Nuestras pizzas están horneadas justo antes de ser servidos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+    
+<!-- 2. BANNER PRINCIPAL -->
+    <main>
+        <section class = "banner padding-200">
+            <div class = "container-banner">
+                <div class = "row">
+                    <div class = "col col-50 padding-50">
+                        <h3>Tenemos muchas variedades de pizzas!</h3>
+                        <h5>COMPRA TU PIZZA FAVORITA</h5>
+                        <h4>Hoy con 30% de descuento</h4>
+                        <a class="banner-button" href="#">Pide ahora</a>
+                        <a class="banner-button" href="#">Más ofertas</a>
+                    </div>
+
+                    <div class = "col col-50">
+                        <img src="assets/img/pizza1.png" class="banner-img" alt="">
+                    </div>
+                </div>
+            </div>          
+        </section>
+
+
+
+
+
+<!-- 3. SECCIÓN DE PRESENTACIÓN -->
+        <section class = "about padding-100">
+            <div class="container-center">
+                <h6>ACERCA DE NUESTRO RESTAURANTE</h6> 
+                <h4 class = "about padding-20">Las auténticas pizzas italianas</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nemo consequuntur illum quidem! Non sequi odio aperiam molestiae error voluptatum fugit laudantium nobis impedit? Iste repellendus fugiat, magni eligendi suscipit eveniet ipsum obcaecati error quasi iusto ipsam laboriosam officia pariatur amet! Illum mollitia magni natus eos aspernatur veniam deleniti, dolores provident iure expedita vel sint quae quos impedit maxime. Expedita mollitia modi voluptate labore et repellat veritatis molestias, odit quis! Perferendis laborum, delectus adipisci nesciunt provident molestias iusto pariatur velit.</p>
+                <img src="assets/img/pizza2.png" class="about-img" alt="">
+            </div>
+        </section>
+
+
+
+
+
+<!-- 4. SECCIÓN DE SERVICIOS -->
+        <section class = "menu padding-100">
+            <div class = "container-center">
+                <h6>NUESTROS PLATOS MÁS POPULARES</h6>
+
+
+            <section class = "menu padding-50">
+                <div class = "row">
+                
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu1.png" class = "menu-img padding-10" alt = "">
+                        <h4>Taco Marino</h4>
+                        <h3 class = "padding-10">$ 22.80</h3>
+                        <a class = "menu-button" href = "#">Añadir al carrito</a>
+                    </div>
+
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu2.png" class = "menu-img padding-10" alt = "">
+                        <h4>Alitas BBQ</h4>
+                        <h3 class = "padding-10">$ 31.92</h3>
+                        <a class = "menu-button" href = "#">Añadir al carrito</a>
+                    </div>
+
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu3.png" class = "menu-img padding-10" alt = "">
+                        <h4 class = "">Tacos de Pollo</h4>
+                        <h3 class = "padding-10">$ 28.50</h3>
+                        <a class = "menu-button padding-30" href = "#">Añadir al carrito</a>
+                    </div>
+    
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu4.png" class = "menu-img padding-10" alt = "">
+                        <h4>Taco de Carnita</h4>
+                        <h3 class = "padding-10">$ 28.50</h3>
+                        <a class = "menu-button" href = "#">Añadir al carrito</a>
+                    </div>
+
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu5.png" class = "menu-img padding-10" alt = "">
+                        <h4>Sandwich de Pollo</h4>
+                        <h3 class = "padding-10">$ 26.22</h3>
+                        <a class = "menu-button" href = "#">Añadir al carrito</a>
+                    </div>
+
+                    <div class = "col col-33 padding-30 texto-center">
+                        <img src = "assets/img/menu6.png" class = "menu-img padding-10" alt = "">
+                        <h4>Taco de Birria</h4>
+                        <h3 class = "padding-10">$ 27.36</h3>
+                        <a class = "menu-button" href = "#">Añadir al carrito</a>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </section>
+
+
+
+
+
+<!-- 6. NUESTRO EQUIPO -->
+        <section class = "staff padding-40">
+            <div class = "container-center">
+                <h1 class = "padding-10 subrayado">NUESTRO EQUIPO</h1>
+                <h5 class = "padding-10">NUESTROS CHEFS EXPERTOS</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque quaerat, minus omnis sequi, cum ut minima magni quidem explicabo amet possimus in labore deserunt maxime quia excepturi! Nisi, obcaecati?</p>
+                
+                <!-- CARD -->
+                <div class = "row">
+
+                    <!-- CHEF 1 -->
+                    <div class="col col-33 padding-10">
+                        <div class="card">
+                            <div class = "staff-card-img">
+                                <img src="assets/img/chef1.webp" class="card-img-top img-fluid-staff" alt="">
+                                
+                                <div class = "redes-sociales">
+                                    <a class = "me-2 text-decoration-none" href = "https://facebook.com/" target = "_blank" title = ""><i class = "fa-brands fa-facebook"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://instagram.com/" target = "_blank" title = ""><i class= "fa-brands fa-instagram"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://tiktok.com/" target = "_blank" title = ""><i class="fa-brands fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        
+                            <div class="card-body">
+                                <h4 class="card-title">Michale Smith</h4>
+                                <h2 class = "staff-position">Jefa de cocina</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                                <a href="#" class="staff-button">Ver más</a>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- CHEF 2 -->
+                    <div class="col col-33 padding-10">
+                        <div class="card">
+                            <div class = "staff-card-img">
+                                <img src="assets/img/chef2.webp" class="card-img-top img-fluid-staff" alt="">
+                                
+                                <div class = "redes-sociales">
+                                    <a class = "me-2 text-decoration-none" href = "https://facebook.com/" target = "_blank" title = ""><i class = "fa-brands fa-facebook"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://instagram.com/" target = "_blank" title = ""><i class= "fa-brands fa-instagram"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://tiktok.com/" target = "_blank" title = ""><i class="fa-brands fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        
+                            <div class="card-body">
+                                <h4 class="card-title">Dyron Palacios</h4>
+                                <h2 class = "staff-position">Chef de mariscos</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                                <a href="#" class="staff-button">Ver más</a>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- CHEF 3 -->
+                    <div class="col col-33 padding-10">
+                        <div class="card">
+                            <div class = "staff-card-img">
+                                <img src="assets/img/chef3.webp" class="card-img-top img-fluid-staff" alt="">
+                                
+                                <div class = "redes-sociales">
+                                    <a class = "me-2 text-decoration-none" href = "https://facebook.com/" target = "_blank" title = ""><i class = "fa-brands fa-facebook"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://instagram.com/" target = "_blank" title = ""><i class= "fa-brands fa-instagram"></i></a>
+                                    <a class = "me-2 text-decoration-none" href = "https://tiktok.com/" target = "_blank" title = ""><i class="fa-brands fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        
+                            <div class="card-body">
+                                <h4 class="card-title">Karla Dramans</h4>
+                                <h2 class = "staff-position">Pastelera</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                                <a href="#" class="staff-button">Ver más</a>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+<!-- 5. TESTIMONIOS DE CLIENTES -->
+        <section class = "feedback padding-50">
+            <div class = "container-center">
+                <h5>TESTIMONIOS DE CLIENTES</h5>
+
+                <div class = "row padding-50">
+                    <div class = "col-clientes col-33 padding-20">
+                        <img src="assets/img/cliente1.webp" class="padding-10" alt="">
+                        <h3>Marray Joe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero, minus hic repellat sapiente architecto?</p>
+                    </div>
+
+                    <div class = "col-clientes col-33 padding-20">
+                        <img src="assets/img/cliente2.webp" class="padding-10" alt="">
+                        <h3>James Deen</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero, minus hic repellat sapiente architecto?</p>
+                    </div>
+
+                    <div class = "col-clientes col-33 padding-20">
+                        <img src="assets/img/cliente3.webp" class="padding-10" alt="">
+                        <h3>Jhony Deep</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero, minus hic repellat sapiente architecto?</p>
+                    </div>
+
+                    <div class = "col-clientes col-50 padding-20">
+                        <img src="assets/img/cliente4.webp" class="padding-10" alt="">
+                        <h3>Karla Storms</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero, minus hic repellat sapiente architecto?</p>
+                    </div>
+
+                    <div class = "col-clientes col-50 padding-20">
+                        <img src="assets/img/cliente5.webp" class="padding-10" alt="">
+                        <h3>Samdra Palma</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero, minus hic repellat sapiente architecto?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- 8. CALIDAD DE PRODUCTOS -->
+        <section class = "staff padding-100">
+            <div class = "container-center">
+                <h5>LA CALIDAD DE NUESTROS PRODUCTOS</h5>
+
+                <div class = "row padding-40">    
+                    <div class = "col-calidad col-25 padding-10">
+                        <img src="assets/img/calidad1.png" class = "" alt = "">
+                        <h4 class = "padding-20">Productos frescos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                    </div>
+
+                    <div class = "col-calidad col-25 padding-10">
+                        <img src="assets/img/calidad2.png" class = "" alt = "">
+                        <h4 class = "padding-20">Productos orgánicos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                    </div>
+
+                    <div class = "col-calidad col-25 padding-10">
+                        <img src="assets/img/calidad3.png" class = "" alt = "">
+                        <h4 class = "padding-20">Entregas más rápidas</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                    </div>
+
+                    <div class = "col-calidad col-25 padding-10">
+                        <img src="assets/img/calidad4.png" class = "" alt = "">
+                        <h4 class = "padding-20">Agricultores certificados</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum, in nihil eligendi cumque dolore?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!-- 7. FOOTER / PIE DE PÁGINA -->
+    <footer class = "footer padding-20">
+        <div class = "container">
+            <div class = "padding-10">
+                &copy; 2025 Pizzería Resto - Todos los derechos reservados
+            </div>
+                <div>        
+                    <h3>Contacto</h3>        
+                    <p>Road Brooklyn Street, 600 New York, USA</p>
+                    <p>info@resto.com</p>
+                    <p>+51 999 888 777</p>
+                </div>
+        </div>
+    </footer>
+
+
+    <a href = "#" class = "scroll-up">
+        <i class = "fa-solid fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Enlazar el HTML con la librería principal de javascript de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Enlazar HTML con la librería de funciones de javascript -->
+    <script src = "assets/scripts/script.js"></script>
+
+</body>
+</html>
+
+<!-- 
+B. Configuración General (2 puntos)
+    ✅• Uso obligatorio de al menos una fuente de Google Fonts.
+    ✅• Interlineado base: 1.8em.
+    ✅• Contenedor principal: 80% del ancho o equivalente Bootstrap.
+    ✅• Imágenes optimizadas (≤ 200 KB).
+    ✅• Título de la pestaña con nombre completo del estudiante.
+    ✅• Logo enlazado correctamente a index.html.
+    ✅• Favicon funcional y visible.
+
+C. TopBar y NavBar (4 puntos)
+1. TopBar
+    ✅• Debe incluir íconos, dirección, teléfonos y correos.
+    ✅• Teléfonos y correos deben ser funcionales usando protocolos:
+        ✅o tel:
+        ✅o mailto:
+    ✅• Iconos de FontAwesome o Bootstrap.
+    ✅• Los enlaces deben abrirse en nueva pestaña.
+2. NavBar
+    ✅• Logo institucional o del proyecto.
+    ✅• Mínimo 5 ítems de menú con efecto hover (cambio de color + transición 0.5s).
+    ✅• Botón de acción (ej. Book Appointment).
+    ✅• Barra fija (sticky) en la parte superior.
+
+
+D. Carrusel Bootstrap (2 puntos)
+    ✅• Mínimo 3 imágenes completamente personalizadas (no del demo).
+    ✅• Imágenes uniformes y en ancho completo del viewport.
+    ✅• Carrusel debe iniciarse automáticamente.
+    ✅• Intervalo configurado para avanzar cada 4 segundos.
+
+
+✅E. Sección “Médicos” o Equipo Profesional (5 puntos)
+1. Encabezado
+    ✅• Subtítulo pequeño + título principal destacado.
+    ✅• Párrafo breve (2 líneas).
+2. Contenido (3 columnas)
+    Cada columna debe incluir:
+    ✅1. Imagen del profesional con border-radius.
+    ✅2. Nombre (alineado a la izquierda, con negrita).
+    ✅3. Especialidad.
+    ✅4. Íconos de redes sociales dentro del contenedor de la imagen, alineados y espaciados.
+    ✅5. Párrafo corto de descripción.
+
+F. Diseño Responsive (6 puntos)
+Debe demostrarse una correcta adaptación a tres niveles:
+1. Dispositivos móviles (≤ 576px)
+    • Elementos a una sola columna.
+    • Ajustes en TopBar y NavBar para legibilidad.
+2. Tablets (≤ 768px)
+    • Visibilidad del menú hamburguesa.
+    • Navegación vertical al desplegar el menú.
+    • Ajustes de espaciado, fuentes y elementos visuales.
+3. Pantallas grandes (≤ 1200px)
+    • Distribución en tres columnas para las secciones indicadas.
+    • Coherencia en márgenes, fuentes y escalabilidad del contenido.
+-->
