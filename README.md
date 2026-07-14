@@ -1,25 +1,26 @@
 # Pizza Restaurant Website
 
-A responsive restaurant website built as a final project for my first Web Design and Development course.  
-It simulates a modern pizza restaurant landing page with multiple sections and interactive UI components.
+Sitio web responsive de un restaurante, creado como proyecto final de mi primer curso de Diseño y Desarrollo Web.
+Simula la landing page de una pizzería moderna, con múltiples secciones y componentes de UI interactivos.
 
-## Live Preview
+## Vista en vivo
+
 https://kaat-u.github.io/pizza-restaurant-website/
 
-## Overview
+## Descripción
 
-This project was created to practice and demonstrate fundamental front-end development skills, including layout design, responsiveness, and component structuring using HTML, CSS, and Bootstrap.
+Este proyecto fue creado para practicar y demostrar habilidades fundamentales de desarrollo front-end, incluyendo diseño de layout, responsividad y estructuración de componentes usando HTML, CSS y Bootstrap.
 
-The website includes:
-- Hero carousel with promotional content
-- Navigation bar with logo and menu
-- About section
-- Menu/product showcase
-- Team section
-- Customer testimonials
-- Footer with contact information
+El sitio web incluye:
+- Carrusel principal con contenido promocional
+- Barra de navegación con logo y menú
+- Sección "Nosotros"
+- Vitrina de menú/productos
+- Sección de equipo
+- Testimonios de clientes
+- Footer con información de contacto
 
-## Technologies Used
+## Tecnologías
 
 - HTML5
 - CSS3
@@ -28,15 +29,15 @@ The website includes:
 - Font Awesome
 - Google Fonts
 
-## Features
+## Características
 
-- Fully responsive design (mobile, tablet, desktop)
-- Carousel with automatic slide (4s interval)
-- Sticky navigation bar
-- Hover effects on buttons and links
-- Social media icons integration
-- Clean and organized layout
+- Diseño completamente responsive (móvil, tablet, escritorio)
+- Carrusel con cambio automático de slide (intervalo de 4s)
+- Barra de navegación sticky
+- Efectos hover en botones y enlaces
+- Integración de iconos de redes sociales
+- Layout limpio y organizado
 
-## Ongoing Improvements
+## Curso
 
-This project will be updated as I continue learning and improving my front-end skills.
+Diseño y Desarrollo Web
